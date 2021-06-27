@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="pink" >
+<div align="center">
+<marquee scrollamount="15"><h1>WELLCOME TO IPL TEAMS</h1></marquee>
+{% for i in obj %}
+<b>{{i.tname}}</b>:<i>{{ i.state}}</i>: <img src="{{i.logourl.url}}"<br><br>
+{% endfor %}<br><br>
+</div>
+
+<a href="/tm/">ADD TEAM</a>
+</body>
+</html>

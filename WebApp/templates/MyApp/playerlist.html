@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body bgcolor="pink">
+<div align="center">
+<marquee><h1>WELLCOME TO PLAYERS LIST</h1></marquee>
+{% for i in obj %}
+<b>{{i.first_name}}</b> :<i>{{i.last_name}}</i>:<img src="{{i.player_image.url}}"><br/><br/>
+{% endfor %}<br/><br/>
+</div>
+<a href="/player/"><b>ADD PLAYER</b></a>
+</body>
+</html>
